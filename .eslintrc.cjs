@@ -19,7 +19,9 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['react', 'jsx-a11y'],
-  rules: {},
+  rules: {
+    'react/prop-types': 'off',
+  },
   settings: {
     react: {
       version: 'detect',

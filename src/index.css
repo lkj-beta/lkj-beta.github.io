@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Helvetica Neue Light';
+  src: url('/public/Helvetica\ Neue\ Light.woff2') format('woff2');
+}
 body {
   margin: 0px;
   background-color: #000000;
@@ -7,6 +11,11 @@ body {
   padding-left: 0px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.page {
+  width: 827px;
+  margin-right: auto;
+  margin-left: auto;
 }
 #home {
   height: 100%;
@@ -18,33 +27,48 @@ body {
   text-align: center;
 }
 header {
-  width: 827px;
-  margin-right: auto;
-  margin-left: auto;
+  height: 88px;
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+  color: whitesmoke;
+}
+header h1 {
+  margin: 0;
+  font-family: 'Helvetica Neue-Light', 'Helvetica Neue Light', courier, Helvetica, sans-serif;
+  font-size: 42px;
+  font-weight: 300;
+  letter-spacing: 7px;
 }
 nav {
-  margin-right: auto;
-  margin-left: auto;
-  width: 827px;
-  margin-top: 0px;
-  padding-top: 0px;
-  background-image: url(images/navbar-bgd.jpg);
-  background-repeat: repeat-y;
+  margin-bottom: -80px;
+  height: 80px;
 }
-#main-cell-home {
-  background-image: url(images/index-bgd.jpg);
-  background-repeat: no-repeat;
-  width: 827px;
-  margin-right: auto;
-  margin-left: auto;
-  height: 500px;
+.active {
+  color: #7c6fd1;
+  text-shadow: 0.5px 1.25px 5px #7a6fd1;
+}
+nav ul {
+  margin: 0;
+}
+nav li {
+  display: inline;
+}
+nav a {
+  padding-top: 10px;
+  padding-bottom: 38px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
   color: #cfcfd0;
-  font-family: Helvetica, Arial, Verdana, sans-serif;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 22px;
-  margin-top: 0px;
-  padding-top: 0px;
+}
+nav > ul > button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  vertical-align: sub;
+  font-size: 27px;
+  padding: 0;
 }
 #main-cell-home a {
   color: #ffffff;
@@ -72,9 +96,10 @@ nav {
   padding-bottom: 10px;
 }
 hr {
-  border-top-width: 1px;
-  border-top-style: solid;
-  border-top-color: #ffffff;
+  border: none;
+  background-color: #cfcfd0;
+  height: 1px;
+  margin: 0;
 }
 footer {
   color: #999999;
@@ -113,12 +138,6 @@ p {
   padding-left: 0px;
   margin: 0px;
   font-weight: lighter;
-}
-h1 {
-  font-size: 18px;
-  color: #7b6fd1;
-  font-weight: normal;
-  font-family: Helvetica, Arial, Verdana, sans-serif;
 }
 a {
   color: #ffffff;

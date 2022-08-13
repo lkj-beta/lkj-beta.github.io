@@ -3,6 +3,8 @@ import { useCallback } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { useContent } from '../content';
 import { LanguageContext } from '../LanguageContext';
+import FrenchFlag from '../icons/fr.svg';
+import USFlag from '../icons/us.svg';
 
 export default function Page({ children }) {
   const content = useContent('page');
@@ -32,27 +34,25 @@ export default function Page({ children }) {
         </header>
       </a>
       <hr />
-      <nav
-        style={{
-          paddingLeft: language === 'en' ? '14px' : 0,
-          marginLeft: language === 'en' ? 0 : '-32px',
-        }}
-      >
-        <ul>
+      <nav>
+        <ul style={{ display: 'grid' }}>
           <NavItem name="home" to="" />
           <NavItem name="about" />
           <NavItem name="audio" />
           <NavItem name="videos" />
           <NavItem name="contact" />
-          <button
-            onClick={() => setLanguage('en')}
-            style={{ margin: language === 'en' ? '0 5px 0 185px' : '0 5px 0 240px' }}
-          >
-            🇺🇸
-          </button>
-          <button onClick={() => setLanguage('fr')} style={{ margin: 0 }}>
-            🇫🇷
-          </button>
+          <div>
+            <button
+              aria-label="change language to english"
+              onClick={() => setLanguage('en')}
+              style={{ backgroundImage: `url(${USFlag})` }}
+            />
+            <button
+              aria-label="change language to french"
+              onClick={() => setLanguage('fr')}
+              style={{ backgroundImage: `url(${FrenchFlag})` }}
+            />
+          </div>
         </ul>
       </nav>
       {children}

@@ -8,7 +8,7 @@ import Home from './Home';
 import Videos from './Videos';
 import './index.css';
 import { LanguageProvider } from './LanguageContext';
-import Page from './components/Page';
+import Page from './Page';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

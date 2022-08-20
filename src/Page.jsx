@@ -43,11 +43,11 @@ export default function Page({ children }) {
           <NavItem name="contact" />
           <li
             style={{
-              borderBottom: 'none',
+              border: 'none',
               zIndex: 1,
               background:
                 'linear-gradient(to right bottom, rgba(98, 0, 28, 0.95), rgba(0, 0, 0, 0.43))',
-              paddingBottom: '10px',
+              paddingBottom: '16px',
             }}
           />
           <li />

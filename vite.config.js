@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/lkj-beta.github.io/',
+  base: 'https://lkj-beta.github.io/',
+  appType: 'mpa',
   plugins: [react()],
 });

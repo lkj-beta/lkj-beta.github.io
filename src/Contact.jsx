@@ -25,7 +25,7 @@ export default function Contact() {
         </p>
       </article>
       <article style={{ width: '50%' }}>
-        <img style={{ opacity: '0.9' }} src={blueHeadshot} alt="Larry in a blue light" />
+        <img src={blueHeadshot} alt="Larry in a blue light" />
       </article>
     </main>
   );

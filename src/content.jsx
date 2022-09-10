@@ -23,7 +23,7 @@ const copy = {
       ),
       second: (
         <p>
-          He has entertained enthusiastic audiences at The Oak Room at hte Algonquin Hotel, The
+          He has entertained enthusiastic audiences at The Oak Room at The Algonquin Hotel, The
           Rainbow Room, The Russian Team Room, Le Cirque, Tavern-on-the-Green and The River Café, to
           name a few.
         </p>
@@ -36,10 +36,8 @@ const copy = {
           his fans and admirers call "smooth, mellifluous, and mellow." He has a unique style and
           sophisticated presence along with a warm and humorous personality that makes him a
           frequently requested guest artist for a variety of events and situations. His repertoire
-          runs the gamut of
-          <em>The Great American Songbook</em> with jazz and pop standards, Broadway show tunes, and{' '}
-          <em>Tin Pan Alley</em>
-          classics plus international favorites.
+          runs the gamut of <em>The Great American Songbook</em> with jazz and pop standards,
+          Broadway show tunes, and <em>Tin Pan Alley</em> classics plus international favorites.
         </p>
       ),
       fourth: (

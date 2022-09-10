@@ -88,12 +88,17 @@ export default function Page({ children }) {
         </ul>
       </nav>
       {children}
-      {pathname !== '/' ? <hr style={{ marginTop: '4vw' }} /> : null}
-      <footer>
-        <span>Larry King Productions, Inc.</span> &ndash; 255 West 23rd Street &ndash; Suite #2C-W
-        &ndash; New York, NY 10011 USA &ndash; TEL <a href="tel:+12126273282">+1 212 627 3282</a>{' '}
-        &ndash; EMAIL <a href="mailto:LKingMusic@gmail.com">LKingMusic@gmail.com</a>
-      </footer>
+      {pathname !== '/contact' ? (
+        <>
+          <hr style={{ marginTop: '4vw' }} />
+          <footer>
+            <span>Larry King Productions, Inc.</span> &ndash; 255 West 23rd Street &ndash; Suite
+            #2C-W &ndash; New York, NY 10011 USA &ndash; TEL{' '}
+            <a href="tel:+12126273282">+1 212 627 3282</a> &ndash; EMAIL{' '}
+            <a href="mailto:LKingMusic@gmail.com">LKingMusic@gmail.com</a>
+          </footer>
+        </>
+      ) : null}
     </div>
   );
 }

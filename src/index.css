@@ -30,18 +30,16 @@ img {
   height: 100%;
 }
 header {
-  height: 88px;
-  padding-left: 50px;
-  display: flex;
-  align-items: center;
+  padding-top: 2.5vw;
+  margin-bottom: 3vw;
   color: whitesmoke;
 }
 header h1 {
   margin: 0;
   font-family: 'Helvetica Neue-Light', 'Helvetica Neue Light', Helvetica, sans-serif;
-  font-size: 38px;
+  font-size: min(8vw, 38px);
   font-weight: 300;
-  letter-spacing: 7px;
+  letter-spacing: min(1vw, 7px);
 }
 h2 {
   font-size: 18px;
@@ -130,9 +128,6 @@ footer {
   border-width: 0.5px;
   border-style: solid;
   border-image: linear-gradient(to top, rgba(255, 255, 255, 0.65), rgba(0, 0, 0, 0)) 1 10%;
-}
-nav ul li {
-  min-width: 51px;
 }
 nav ul li:first-child {
   border-left: none;

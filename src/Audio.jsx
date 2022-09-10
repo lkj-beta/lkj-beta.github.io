@@ -43,18 +43,18 @@ export default function Audio() {
         <h2>AUDIO</h2>
         <p className="subtitle">{content.subtitle}</p>
         <ul className="trackButton">
-          <TrackButton src={rainbowConnection} title="The Rainbow Connection" />
-          <TrackButton src={sway} title="Sway" />
-          <TrackButton src={getOutOfTown} title="Get Out of Town" />
           <TrackButton src={whenInRome} title="When in Rome" />
+          <TrackButton src={getOutOfTown} title="Get Out of Town" />
+          <TrackButton src={sway} title="Sway" />
           <TrackButton src={likeSomeoneInLove} title="Like Someone in Love" />
           <TrackButton src={touchOfYourLips} title="The Touch of Your Lips" />
-          <TrackButton src={believeInSpring} title="You Must Believe In Spring" />
-          <TrackButton src={lookAtMeNow} title="Oh, Look At Me Now" />
-          <TrackButton src={weAreInLove} title="We Are In Love" />
+          <TrackButton src={rainbowConnection} title="The Rainbow Connection" />
           <TrackButton src={serenadeMedley} title="Moonlight Serenade / Serenade in Blue" />
           <TrackButton src={sinatraMedley} title="Sinatra Medley" />
           <TrackButton src={unforgettable} title="Unforgettable" />
+          <TrackButton src={believeInSpring} title="You Must Believe In Spring" />
+          <TrackButton src={lookAtMeNow} title="Oh, Look At Me Now" />
+          <TrackButton src={weAreInLove} title="We Are In Love" />
         </ul>
       </article>
       <article
@@ -92,11 +92,11 @@ export default function Audio() {
                 <source src={ref.src} type="audio/mpeg" />
                 Your browser does not support the audio element.
               </audio>
+              <hr className="linearHr" style={{ marginBottom: '20px' }} />
             </div>
           )}
         </Transition>
 
-        <hr className="linearHr" />
         <img
           style={{ margin: '0 auto', maxWidth: '305px' }}
           src={larryPiano}

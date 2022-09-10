@@ -51,7 +51,7 @@ export default function Page({ children }) {
             }}
           />
           <li />
-          <li>
+          <li style={{ minWidth: '50px' }}>
             <button
               aria-label="change language to english"
               onClick={() => setLanguage('en')}
@@ -80,7 +80,8 @@ export default function Page({ children }) {
           <li />
           <li
             style={{
-              marginTop: '-1.25vw',
+              minWidth: '50px',
+              marginTop: 'max(-1.25vw, 15px)',
               height: 'min(7vw, 55px)',
               background: 'linear-gradient(to left top, rgb(64, 42, 119) 5%, rgba(0, 0, 0, 0.43))',
             }}

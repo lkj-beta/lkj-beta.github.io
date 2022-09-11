@@ -25,7 +25,11 @@ export default function Contact() {
         </p>
       </article>
       <article style={{ width: '50%' }}>
-        <img style={{ marginTop: '4vw' }} src={blueHeadshot} alt="Larry in the light" />
+        <img
+          style={{ marginTop: '4vw', maxWidth: '300px' }}
+          src={blueHeadshot}
+          alt="Larry in the light"
+        />
       </article>
     </main>
   );
